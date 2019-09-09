@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ZhiYunTests.xctest' tests='5' failures='0'>
+  <testsuite name='ZhiYunFloat2StringTests' tests='3' failures='0'>
+    <testcase classname='ZhiYunFloat2StringTests' name='testFloat2String' time='0.002'/>
+    <testcase classname='ZhiYunFloat2StringTests' name='testFloat2StringScore' time='0.001'/>
+    <testcase classname='ZhiYunFloat2StringTests' name='testPerformanceExample' time='0.405'/>
+  </testsuite>
+  <testsuite name='ZhiYunTests' tests='2' failures='0'>
+    <testcase classname='ZhiYunTests' name='testExample' time='0.000'/>
+    <testcase classname='ZhiYunTests' name='testPerformanceExample' time='0.252'/>
+  </testsuite>
+</testsuites>

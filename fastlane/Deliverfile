@@ -1,0 +1,122 @@
+# The Deliverfile allows you to store various App Store Connect metadata
+# For more information, check out the docs
+# https://docs.fastlane.tools/actions/deliver/
+
+############################# APP 信息 ####################################
+
+# 1 app_identifier
+app_identifier "com.zhongxun.zhiyun"
+
+# 2 用户名, Apple ID 电子邮件地址
+username "2025679496@qq.com"  
+
+# 3 app 名称
+name({
+  "zh-Hans" => "知运"
+})
+
+# 4 app 副标题
+subtitle({
+  "zh-Hans" => ""
+})
+
+# 5 隐私政策网址
+privacy_url({
+  "zh-Hans" => "http://120.78.124.36/index2.html"
+})
+
+# 6 支持语言
+supportedLanguages = {
+  "cmn-Hans" => "zh-Hans"
+}
+
+# 7 主要类别 
+primary_category "Education"
+
+# 8 分级
+app_rating_config_path "./fastlane/metadata/itunes_rating_config.json"
+
+#################################### 价格与销售范围  ####################################
+
+# 1 价格
+price_tier 0
+
+#################################### iOS App ####################################
+
+# 1 宣传文本
+promotional_text({
+  "zh-Hans" => "【知运】知识改变命运。知运致力于打造知识覆盖面最广、干货最多、性价比最高的线上教育平台。所有领域的课程均层层把关，优中选优，只为给大家带来最实用的精品课程。让每一个渴求知识的人都能真正有所收获。无噱头无虚假，做良心教育品牌。求知路上，知运始终与您并肩前行，一同进步和成长。\n拒绝\"假大空\"，课程有趣易懂，实用性强。值得拥有。"
+})
+
+# 2 描述
+description({
+  "zh-Hans" => "下载APP你将拥有：\n【精彩课程，免费试听】课程好不好？由你说了算！免费试听，总有你拒绝不了的精彩课程。\n【领域大咖，倾情制作】网罗各领域专家、老师、达人、前辈等优质课程，每一课时的内容都将为大家打开新世界的大门。\n【内容更迭，层层递进】不做断档内容，从基础到拔高，让你真正能通过课程学习晋升为行业精英。\n【不断优化，功能完善】不断增添和优化功能，让课程学习操作简易。满足不同年龄阶段的学习需求。"
+})
+
+# 2.1 发布信息
+# release_notes({
+#   "zh-Hans" => ""
+# })
+
+# 3 关键词
+keywords(
+  "zh-Hans" => "知运，知运在线"
+)
+
+# 4 技术支持网址
+support_url({
+  "zh-Hans" => "http://www.zhiyunzaixian.com/"
+})
+
+# 5 营销网址
+marketing_url({
+  "zh-Hans" => "http://www.zhiyunzaixian.com/"
+})
+
+# 6 图标
+app_icon "./fastlane/metadata/AppIcon.png"
+
+# 7 版权
+copyright("Copyright © #{Time.now.year} ZhongXun Inc. All Right Reserved")
+
+# 8 商务信息
+trade_representative_contact_information(
+  first_name: "张",
+  last_name: "冬冬",
+  address_line1: "Wushan 6-109",
+  address_line2: "",
+  address_line3: "",
+  city_name: "Hangzhou",
+  state: "ZHEJIANG",
+  country: "China",
+  postal_code: "310002",
+  phone_number: "18624438893",
+  email_address: "939224798@qq.com"
+)
+
+# 9 审核信息
+app_review_information(
+  first_name: "张",
+  last_name: "冬冬",
+  phone_number: "18624438893",
+  email_address: "939224798@qq.com",
+  demo_user: "13846410095",
+  demo_password: "111111",
+  notes: "沙盒账号: godzzzzz@126.com\n沙盒密码: Jul7thcsd"
+)
+
+# 10 提交信息:加密, idfa 等
+submission_information({    
+  export_compliance_encryption_updated: false,
+  export_compliance_uses_encryption: false,
+  content_rights_contains_third_party_content: false,
+  add_id_info_uses_idfa: false
+})
+
+####################################### 其他信息 ###################################
+
+# 1 自动发布 app: false, 则需要手动发布
+automatic_release false
+
+
+
